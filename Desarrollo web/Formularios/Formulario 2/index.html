@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+    <link rel="stylesheet" href="style.css">
+    <script defer src="validacion.js"></script>
+    <title>Formulario basico</title>
+</head>
+<body>
+    <form class="form-register" id="form-register">
+        <h1>Formulario registro</h1>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres">
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Correo electronico">
+        <div class="password-container">
+            <input class="controls" type="password" name="password" id="password" placeholder="Contraseña">
+            <button type="button" class="toggle-password" id="togglePassword"><i class="fas fa-eye"></i></button>
+        </div>
+        <div class="password-container">
+            <input class="controls" type="password" name="password-confirm" id="password-confirm" placeholder="Confirmar Contraseña">
+            <button type="button" class="toggle-password" id="togglePasswordConfirm"><i class="fas fa-eye"></i></button>
+        </div>
+        <label for="terminos-y-condiciones">
+            <p>
+                <input type="checkbox" name="terminos-y-condiciones" id="terminos-y-condiciones">
+                Estoy de acuerdo con <a href="#">Terminos y condiciones</a>
+            </p>
+        </label>
+        <input class="buttons" id="registrar" type="submit" value="Registrar">
+        <p id="ya-tienes-una-cuenta"><a href="#">¿Ya tienes una cuenta?</a></p>
+    </form>  
+</body>
+</html>
