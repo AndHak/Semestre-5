@@ -12,8 +12,8 @@ var swiper = new Swiper(".mySwiper-1", {
     }
 });
 
-var swiper2s = new Swiper(".mySwiper-2", {
-    slidesPerView: 3,
+var swiper = new Swiper(".mySwiper-2", {
+    slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
     loopFillGroupWithBlank: true,
@@ -40,6 +40,6 @@ tabInputs.forEach(function(input) {
     input.addEventListener('change', function() {
         let id = input.value;
         let thisSwiper = document.getElementById("swiper" + id);
-        thisSwiper.swiper2.update();
+        thisSwiper.swiper.update();
     });
 });
