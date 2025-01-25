@@ -1,68 +1,82 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* Estilos generales */
 body {
-  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #333;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  margin: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Contenedor del formulario */
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 80px;
 }
 
-button {
+/* Etiquetas */
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #4a4a4a;
+}
+
+/* Campos de entrada */
+form input, 
+form select, 
+form button {
+  width: 93%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+form select, 
+form button {
+  width: 100%;
+}
+
+/* Hover en campos */
+form input:focus, 
+form select:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 4px rgba(106, 17, 203, 0.4);
+}
+
+/* Botón de envío */
+form button {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+/* Checkbox */
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+span {
+  color: #ff3636;
+  font-size: 0.85rem;
 }
