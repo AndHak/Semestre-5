@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "AndHakTeam.org.test1_flutter"
+    namespace = "AndHakTeam.org.flutter_test_2"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -21,7 +21,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "AndHakTeam.org.test1_flutter"
+        applicationId = "AndHakTeam.org.flutter_test_2"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

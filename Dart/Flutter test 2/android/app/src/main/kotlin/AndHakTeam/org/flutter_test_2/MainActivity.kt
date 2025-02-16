@@ -1,4 +1,4 @@
-package AndHakTeam.org.test1_flutter
+package AndHakTeam.org.flutter_test_2
 
 import io.flutter.embedding.android.FlutterActivity
 
